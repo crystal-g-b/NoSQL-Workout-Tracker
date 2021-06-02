@@ -13,11 +13,11 @@ body,
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #D7BFBA;
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -42,6 +42,11 @@ header {
 
 header h1 {
   transform: skewX(-2deg);
+  color: rgb(108, 117, 104);
+}
+
+h3 {
+  color: rgb(108, 117, 104);
 }
 
 select {
@@ -77,6 +82,13 @@ select:focus {
   outline: none;
 }
 
+#continue-btn {
+  background-color: #D7BFBA;
+}
+
+#workout-btn {
+  background-color: rgb(108, 117, 104);
+}
 select option {
   font-weight: normal;
   width: 100%;
@@ -96,7 +108,7 @@ input {
 }
 
 .wrapper {
-  background-color: #f2f8ff;
+  background-color: #E2DBD5;
   padding-bottom: 100px;
 }
 
@@ -368,9 +380,6 @@ form > button {
   margin-bottom: 5px;
 }
 
-/* .workout .card {
-  width: 350px;
-} */
 
 .prev-workout button {
   margin: 10px;
