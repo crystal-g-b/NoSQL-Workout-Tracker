@@ -1,7 +1,7 @@
-const Workout = require("../models /workout")
+const Workout = require("../models/workout")
 
 module.exports = function(app){ 
-    app.get("/api/workouts",function(req,res){  
+    app.get("/api/workouts", (req,res) => {  
         Workout.find()
         .then(data =>{  
             res.json(data)
@@ -12,15 +12,15 @@ module.exports = function(app){
     });
 
 
-    app.post("/api/workouts",function (req,res){    
+    app.post("/api/workouts", (req,res) => {    
         Workout.create({})
         .then(data => res.json(data))
         .catch(err => { 
             res.json(err)
-        })
+        });
     });
 
-    app.get("/api/workouts/range",function(req,res){  
+    app.get("/api/workouts/range", (req,res) => {  
         Workout.find()
         .then(data =>{  
             res.json(data)
@@ -31,7 +31,7 @@ module.exports = function(app){
     });
 
 
-    app.post("/api/workouts/range",function (req,res){    
+    app.post("/api/workouts/range", (req,res) => {    
         Workout.create({})
         .then(data => res.json(data))
         .catch(err => { 
